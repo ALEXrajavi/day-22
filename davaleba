@@ -1,0 +1,33 @@
+#HOMEWORK N1
+crew=["alex rajavi", "anastasia", "nika katamadze", "nikoloz takidze", "nugzar turmanishvili", "roba amonashvili", "vako"]
+
+index_to_remove = len("alex rajavi")
+
+if 0 <= index_to_remove < len(crew):
+    removed_student = crew.pop(index_to_remove)
+    print(f"Removed student: {removed_student}")
+else:
+    print("Index is out of range.")
+
+print("Updated crew list:")
+print(crew)
+
+
+
+#HOMEWORK N2
+name = "alex rajavi"
+name_length = len(name)
+
+for _ in range(name_length):
+    print("cool", end=" ")
+
+
+
+#HOMEWORK N3
+squad = ["alex rajavi", "anastasia", "nika katamadze", "nikoloz takidze", "nugzar turmanishvili", "roba amonashvili", "vako"]
+
+sorted_squad = sorted(squad, key=lambda name: len(name), reverse=True)
+
+top_2_longest_names = sorted_squad[:2]
+
+print(top_2_longest_names)
